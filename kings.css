@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  color: gray;
+}
+
+.offset:before {
+  height: 3.8rem;
+  margin-top: -3.8rem;
+  content: "";
+  display: block;
+}
+/* Navbar */
+
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-brand img {
+  height: 4rem;
+  color: white;
+}
+
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: cornflowerblue;
+}
+
+/**  Slider **/
+
+.carousel-item {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* Course Section  */
+
+.narrow {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.btn-md {
+  border-width: medium;
+  border-radius: 3rem;
+  padding: 0.6rem 1.1rem;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 30%;
+  text-transform: uppercase;
+}
+
+.carousel-caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+
+.carousel-caption h3 {
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
+
+.jombotron {
+  border-radius: 0.5rem;
+  padding: 3rem 0 2rem;
+  margin-bottom: 0;
+}
+
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: cornflowerblue;
+  margin: 0 auto 4rem;
+}
+
+/* Portfolio */
+
+.portfolio img {
+  max-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.row.no-padding [class*="col-"] {
+  padding: 0;
+}
+
+.portfolio img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+
+.portfolio {
+  overflow: hidden;
+}
+
+.card {
+  margin: 2rem;
+}
+
+/*  Contact */
+
+footer {
+  background-color: gray;
+  color: white;
+  padding: 2rem 0 3rem;
+  margin-top: 1rem;
+}
+
+footer img {
+  height: 8rem;
+  margin: 1.5rem 0;
+}
+
+footer a {
+  color: white;
+}
+
+footer svg.svg-inline--fa {
+  font-size: 2rem;
+  margin: 1.2rem 0.5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+  color: cornflowerblue;
+}
+
+hr.socket {
+  border-top: 0.2rem solid lightgray;
+  width: 100%;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+  .carousel-caption h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+  }
+
+  .narrow h1 {
+    font-size: 1.5rem;
+  }
+
+  p.lead {
+    font-size: 1rem;
+  }
+}
